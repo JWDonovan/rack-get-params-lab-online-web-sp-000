@@ -27,6 +27,7 @@ class Application
 
       if @@items.include?(item)
         @@cart << item
+        resp.write "added #{item}"
       else
       end
     else

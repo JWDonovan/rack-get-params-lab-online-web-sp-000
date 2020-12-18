@@ -16,6 +16,7 @@ class Application
     elsif req.path.match(/cart/)
       if @@items.empty?
         resp.write "Your cart is empy"
+      end
     else
       resp.write "Path Not Found"
     end
